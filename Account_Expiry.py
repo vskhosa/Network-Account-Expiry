@@ -14,6 +14,9 @@ file1 = filedialog.askopenfilename(title = "Select Account Expiry File")
 
 df=pd.read_csv(file1,encoding='ISO-8859-1')
 
+#Renamed first column for the powershell script to work
+df.rename(columns = {'sAMAccountName':'UserID'}, inplace=True)
+
 #Delete rows where user is Disabled or lognHours are none
 df = df[df.userAccountControl != "Disabled"]
 df = df[df.logonHours != '0']
