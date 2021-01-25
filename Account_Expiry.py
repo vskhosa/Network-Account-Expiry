@@ -3,16 +3,14 @@ from tkinter import filedialog
 import csv
 import pandas as pd
 import datetime
-import subprocess
-import sys
 
 root = tk.Tk()
 root.withdraw()
 
 #Input file from user
-file1 = filedialog.askopenfilename(title = "Select Account Expiry File")
+#file1 = filedialog.askopenfilename(title = "Select Account Expiry File")
 
-#file1 = 'Soon-to-expire User Accounts.csv'
+file1 = 'Soon-to-expire User Accounts.csv'
 
 df=pd.read_csv(file1,encoding='ISO-8859-1')
 
@@ -37,6 +35,3 @@ df.drop(['userAccountControl', 'logonHours'], axis=1, inplace=True)
 
 #Write file to a csv. Using float format to avoid scientific notation for LDAP date
 df.to_csv('Account_ExpiryNEW.csv',index=False,float_format='%.0f')
-
-p = subprocess.Popen(["powershell.exe", "C:\\Temp\\Network Account Expiry\\UpdateUsersCsv.ps1"], stdout=sys.stdout)
-p.communicate()
