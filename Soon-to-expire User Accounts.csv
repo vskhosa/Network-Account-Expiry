@@ -1,0 +1,9 @@
+﻿S.No,sAMAccountName,accountExpires,userAccountControl,distinguishedName,logonHours
+1,CWillard,2001-06-21 0:00,Enabled,Office365/Users,ffffffffffffffffffffffffffffffffffffffffff
+2,WMokake,2001-12-21 0:00,Enabled,Office365/Users,ffffffffffffffffffffffffffffffffffffffffff
+3,Vkhosa,2001-12-22 0:00,Disabled,Office365/Users,ffffffffffffffffffffffffffffffffffffffffff
+4,Jkhurana,2001-06-21 0:00,Enabled,Office365/Users,ffffffffffffffffffffffffffffffffffffffffff
+5,Mcardena,2001-12-21 0:00,Enabled,Office365/Users,ffffffffffffffffffffffffffffffffffffffffff
+6,BDoucett,2021-02-06 0:00,Enabled,Okta/UsersKWE,ffffffffffffffffffffffffffffffffffffffffff
+7,BSundara,2021-02-05 7:00,Enabled,Temporarily Disabled - On Leave,0
+8,SGarlick,2021-02-04 0:00,Enabled,Office365/UsersQST,
